@@ -92,6 +92,8 @@ application = get_wsgi_application()
 
 # WSGI_APPLICATION = 'mysite.wsgi.application'
 
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -146,9 +148,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
