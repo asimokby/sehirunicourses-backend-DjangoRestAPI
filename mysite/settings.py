@@ -102,11 +102,11 @@ DATABASES = {
         'PORT': '',
     }
 }
-import dj_database_url
+# import dj_database_url
 
-db_config = dj_database_url.config()
-if db_config:
-    DATABASES['default'] =  db_config
+# db_config = dj_database_url.config()
+# if db_config:
+    # DATABASES['default'] =  db_config
 
 
 # Password validation
