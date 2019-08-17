@@ -96,7 +96,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mysite',
-        'USER': 'asim-db',
+        'USER': 'asimdb',
         'PASSWORD': 'Ema1234ema_',
         'HOST': 'localhost',
         'PORT': '',
