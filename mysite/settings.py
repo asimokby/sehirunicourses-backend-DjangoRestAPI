@@ -109,7 +109,10 @@ DATABASES = {
     }
 }
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+
+db_config = dj_database_url.config()
+if db_config:
+    DATABASES['default'] =  db_config
 
 
 # Password validation
