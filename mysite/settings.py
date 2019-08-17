@@ -25,11 +25,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '%6v#6mxu9h$g_p#_vbo8y-2q0)k%$o96r)y=9n!&rowc6d1-ee'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# SECURITY WARNING: don
+# 't run with debug turned on in production!
+DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
-# ALLOWED_HOSTS =[]
+# ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['167.71.57.142']
 
 
 # CORS_ORIGIN_WHITELIST = [
@@ -94,13 +95,14 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'asemokby',
-        'USER': 'asemokby',
-        'PASSWORD': 'password',
+        'NAME': 'mysite',
+        'USER': 'asim-db',
+        'PASSWORD': 'Ema1234ema_',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
+
 
 
 # Password validation
