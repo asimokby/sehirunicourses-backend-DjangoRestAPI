@@ -92,8 +92,8 @@ application = get_wsgi_application()
 
 # WSGI_APPLICATION = 'mysite.wsgi.application'
 
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+
+
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -108,7 +108,8 @@ DATABASES = {
         'PORT': '',
     }
 }
-
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
 
 
 # Password validation
