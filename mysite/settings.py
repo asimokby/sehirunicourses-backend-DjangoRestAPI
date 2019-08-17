@@ -33,12 +33,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['167.71.57.142']
 
 
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:4200'
-# ]
-
-# CORS_ORIGIN_ALLOW_ALL = True
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -85,7 +79,7 @@ TEMPLATES = [
         },
     },
 ]
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
