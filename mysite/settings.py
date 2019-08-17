@@ -27,7 +27,7 @@ SECRET_KEY = '%6v#6mxu9h$g_p#_vbo8y-2q0)k%$o96r)y=9n!&rowc6d1-ee'
 
 # SECURITY WARNING: don
 # 't run with debug turned on in production!
-DEBUG = False
+DEBUG = Flase
 
 # ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 ALLOWED_HOSTS = ['167.71.57.142']
@@ -142,9 +142,9 @@ USE_L10N = True
 USE_TZ = True
 
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
