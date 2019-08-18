@@ -30,7 +30,7 @@ SECRET_KEY = '%6v#6mxu9h$g_p#_vbo8y-2q0)k%$o96r)y=9n!&rowc6d1-ee'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
-ALLOWED_HOSTS = ['167.71.57.142', 'www.fakesehir.tk', '127.0.0.1', '.fakesehir.tk']
+ALLOWED_HOSTS = ['167.71.57.142', 'www.fakesehir.tk', '127.0.0.1', '.fakesehir.tk', 'fakesehir.tk']
 
 
 
