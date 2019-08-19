@@ -6,6 +6,7 @@ class Course(models.Model):
     name = models.CharField(max_length=50)
     code = models.CharField(max_length=20)
     teacher = models.CharField(max_length=20)
+    syllabus = models.FileField(upload_to='syllabus', blank=True)
 
 
     def __str__(self):
