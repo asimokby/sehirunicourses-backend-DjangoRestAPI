@@ -102,7 +102,7 @@ if DEBUG:
         'USER': 'asemokby',
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 else:
