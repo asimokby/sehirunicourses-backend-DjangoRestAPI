@@ -1,8 +1,8 @@
-gunicorn==19.9.0
+
 psycopg2-binary==2.8.3
 certifi==2019.6.16
 Django==2.2.3
-django-cors-headers==3.1.0
+django-cors-headers==3.1.0gunicorn --bind 0.0.0.0:8000 myproject.wsgi
 djangorestframework==3.10.2
 pytz==2019.1
 sqlparse==0.3.0

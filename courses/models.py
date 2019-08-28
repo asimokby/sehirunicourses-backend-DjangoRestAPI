@@ -13,6 +13,7 @@ class Course(models.Model):
         return self.name
 
 class Exam(models.Model):
+    course_name = models.CharField(max_length=20, blank=True)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     exam_title = models.CharField(max_length=30)
     exam_file_q = models.FileField(upload_to='exam_questions')
