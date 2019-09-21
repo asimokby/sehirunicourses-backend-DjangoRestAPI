@@ -27,7 +27,7 @@ SECRET_KEY = '%6v#6mxu9h$g_p#_vbo8y-2q0)k%$o96r)y=9n!&rowc6d1-ee'
 
 # SECURITY WARNING: don
 # 't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1']
@@ -94,28 +94,35 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-if DEBUG:
-    DATABASES = {
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'asemokby',
-        'USER': 'asemokby',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'mysite',
-            'USER': 'asimdb',
-            'PASSWORD': 'Ema1234ema_',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-    }
+
+# if DEBUG:
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'asemokby',
+#         'USER': 'asemokby',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'mysite',
+#             'USER': 'asimdb',
+#             'PASSWORD': 'Ema1234ema_',
+#             'HOST': 'localhost',
+#             'PORT': '',
+#         }
+#     }
 
 
 # Password validation
