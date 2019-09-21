@@ -29,10 +29,12 @@ SECRET_KEY = '%6v#6mxu9h$g_p#_vbo8y-2q0)k%$o96r)y=9n!&rowc6d1-ee'
 # 't run with debug turned on in production!
 DEBUG = True
 
-if DEBUG:
-    ALLOWED_HOSTS = ['127.0.0.1']
-else:
-    ALLOWED_HOSTS = ['167.71.57.142', 'fakesehir.tk']
+ALLOWED_HOSTS = ['sehirunicourses.herokuapp.com']
+
+# if DEBUG:
+#     ALLOWED_HOSTS = ['127.0.0.1']
+# else:
+#     ALLOWED_HOSTS = ['167.71.57.142', 'fakesehir.tk']
 
 
 
