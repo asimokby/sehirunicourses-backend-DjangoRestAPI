@@ -6,7 +6,8 @@ class Course(models.Model):
     name = models.CharField(max_length=50)
     code = models.CharField(max_length=20)
     teacher = models.CharField(max_length=20)
-    syllabus = models.FileField(upload_to='syllabus')
+    # syllabus = models.FileField(upload_to='syllabus')
+    syllabus = models.URLField(max_length=2000)
 
 
     def __str__(self):
@@ -15,28 +16,28 @@ class Course(models.Model):
 class Exam(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     exam_title = models.CharField(max_length=30)
-    exam_file_q = models.FileField(upload_to='exam_questions')
+    exam_file_q = models.URLField(max_length=2000)
 
 
 class Note(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     note_title = models.CharField(max_length=30)
-    note_file = models.FileField(upload_to='notes')
+    note_file = models.URLField(max_length=2000)
 
 class Assignment(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     assignment_title = models.CharField(max_length=30)
-    assignment_file_q =  models.FileField(upload_to='assignment_questions')
+    assignment_file_q =  models.URLField(max_length=2000)
     
 class Quiz(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     quiz_title = models.CharField(max_length=30)
-    quiz_file_q = models.FileField(upload_to='quiz_questions')
+    quiz_file_q = models.URLField(max_length=2000)
 
 class Practise(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     practise_title = models.CharField(max_length=30)
-    parctise_file = models.FileField(upload_to='practises')
+    parctise_file = models.URLField(max_length=2000)
 
 
 
