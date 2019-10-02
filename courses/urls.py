@@ -2,6 +2,7 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers 
 from .models import *
+# from django.contrib import admin
 
 
 router = routers.DefaultRouter()
@@ -15,10 +16,5 @@ router.register(r'practises/(?P<course_id>.+)', views.practiseViewSet, base_name
 app_name = 'courses'
 urlpatterns = [
     path('', include(router.urls)),
-    path('api/', include(router.urls)),
-# path('', views.index, name='index'),
-# path('live_index/', views.live_index, name='live_index'),
-# path('<str:code>/', views.detail, name='detail'),
-
 ]
 
